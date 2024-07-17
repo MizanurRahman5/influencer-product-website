@@ -207,3 +207,18 @@ letter-spacing: 1.8%;
 }
 
 /* footer section style */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-color: #0A0826;
+    color: white;
+    line-height: 2rem;
+}
+.footer .icon{
+    display: flex;
+    gap: 2rem;
+}
