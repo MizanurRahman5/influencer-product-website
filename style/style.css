@@ -112,9 +112,10 @@ outline: none;
 
 /* Sponso Section Style */
 .Sponsor {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     margin-top: 5rem;
+    gap: 10px;
     /* border-bottom: rgba(192, 204, 218, 0.1)
     rgba(192, 204, 218, 0.6)
     rgba(192, 204, 218, 0.1); */
@@ -221,4 +222,61 @@ letter-spacing: 1.8%;
 .footer .icon{
     display: flex;
     gap: 2rem;
+}
+
+.hide{
+    display: none;
+}
+.hamber, .shop-icon{
+    display: none;
+}
+
+/* media Query */
+
+/* small device */
+@media screen and (max-width: 576px) {
+
+    .banner, .featur-product{
+        flex-direction: column;
+    }
+    .hamber, .shop-icon{
+        display: block;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner{
+        background-image: none;
+        gap: 2rem;
+    }
+    ul{
+        display: non;
+    }
+    .banner-img{
+        background-image: url('../images/Circle\ design.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .Sponsor{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        align-items: center;
+        
+        
+    }
+    .Sponsor img{
+        width: 78%;
+    }
+    .popular-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer{
+        text-align: center;
+        padding: 20px;
+    }
+    
 }
