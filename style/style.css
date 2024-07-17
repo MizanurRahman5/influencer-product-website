@@ -189,3 +189,21 @@ letter-spacing: 1.8%;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+
+/* feature product section style */
+.featur-product {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 8rem;
+
+}
+.product-container{
+    max-width: 610px;
+}
+.product-img img {
+    width: 100%;
+}
+
+/* footer section style */
